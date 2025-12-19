@@ -19,6 +19,8 @@ Source: NYC Taxi (TLC) Trip Record Data portal (NYC.gov). Monthly trip files for
 
 ## Architecture
 ![Architecture](docs/architecture/architecture.png)
+<img width="890" height="1280" alt="image" src="https://github.com/user-attachments/assets/50635dff-9683-4a91-bf7f-eba45bc58bd6" />
+
 
 High-level flow (Slide 5):
 1) Ingestion: API + Cloud Scheduler (monthly) pulls NYC TLC monthly parquet.
