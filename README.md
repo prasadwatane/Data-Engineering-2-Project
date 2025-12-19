@@ -35,3 +35,23 @@ High-level flow (Slide 5):
 - Run SQL in `sql/` in order (01 → 05)
 - Connect Power BI using `powerbi/README.md`
 
+
+nyc-taxi-analytics-gcp/
+├─ README.md
+├─ docs/
+│  ├─ architecture/
+│  │  ├─ architecture.png        # export slide-5 image
+│  │  └─ architecture.md         # explanation of each box/arrow
+│  ├─ dataset.md                 # dataset + schema notes
+│  └─ decisions.md               # partitioning/clustering + model choice notes
+├─ sql/
+│  ├─ 01_create_tables.sql       # partitioned+clustered tables
+│  ├─ 02_cleaning.sql            # cleaning rules
+│  ├─ 03_hourly_revenue.sql      # hourly aggregation
+│  ├─ 04_lr_train_predict.sql    # linear regression training + next-month forecast
+│  └─ 05_dashboard_views.sql     # views for Power BI
+├─ notebooks/
+│  └─ Untitled6.ipynb            # your exploration notebook
+└─ powerbi/
+   └─ README.md                  # connect Power BI -> BigQuery instructions
+
